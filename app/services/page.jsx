@@ -7,13 +7,25 @@ const services = [
   {
     num: "01",
     title: "Web Development",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    description: "Learning and practicing the creation of modern and responsive websites.",
     href: ""
   },
   {
     num: "02",
     title: "UI/UX Design",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    description: "Exploring user interface and experience design to create intuitive layouts.",
+    href: ""
+  },
+  {
+    num: "03",
+    title: "Frontend",
+    description: "Developing interactive and dynamic interfaces using modern frameworks.",
+    href: ""
+  },
+  {
+    num: "04",
+    title: "Backend",
+    description: "Building the server side of applications and learning about databases",
     href: ""
   },
 ]

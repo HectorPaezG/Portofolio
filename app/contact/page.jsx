@@ -95,9 +95,9 @@ const Contact = () => {
               ref={form}
               onSubmit={sendEmail}
             >
-              <h3 className="text-4xl text-blue-700">Let's work together</h3>
+              <h3 className="text-4xl text-blue-700">Let’s build something</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                I’m available for freelance projects, collaborations, or new opportunities.
               </p>
               {/* Mensaje de advertencia */}
               {warningVisible && (

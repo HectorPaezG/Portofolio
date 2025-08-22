@@ -3,35 +3,36 @@ import WorkCard from "@/components/WorkCard";
 import { motion } from "framer-motion";
 import ProjectTag from "@/components/ProjectTag";
 import React, { useState } from "react";
+import { TypeAnimation } from "react-type-animation";
 
 const projectsData = [
-  {
-    id: 1,
-    title: "Lorem Input 1",
-    description: "Project 1 description",
-    image: "/assets/work/thumb1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 2,
-    title: "Lorem Input 2",
-    description: "Project 2 description",
-    image: "/assets/work/thumb2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 3,
-    title: "Lorem Input 3",
-    description: "Project 3 description",
-    image: "/assets/work/thumb3.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
+  // {
+  //   id: 1,
+  //   title: "Lorem Input 1",
+  //   description: "Project 1 description",
+  //   image: "/assets/work/thumb1.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
+  // {
+  //   id: 2,
+  //   title: "Lorem Input 2",
+  //   description: "Project 2 description",
+  //   image: "/assets/work/thumb2.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Lorem Input 3",
+  //   description: "Project 3 description",
+  //   image: "/assets/work/thumb3.png",
+  //   tag: ["All", "Mobile"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
 ];
 
 const Page = () => {
@@ -70,7 +71,30 @@ const Page = () => {
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
             />
-          ))}
+          ))
+          }
+
+        <div className="col-span-3 flex justify-center items-center py-20">
+              <span className="text-blue-500 text-3xl font-semibold">
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    2000,
+                    "Coming soon...",
+                    3000,
+                    "",
+                    1000,
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  style={{
+                    fontSize: "inherit",
+                    display: "inline-block",
+                  }}
+                  repeat={Infinity}
+                />
+              </span>
+            </div>
         </div>
       </motion.div>
     </>
